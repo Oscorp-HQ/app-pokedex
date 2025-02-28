@@ -30,7 +30,7 @@ import com.skydoves.pokedex.ui.details.DetailActivity
 
 class PokemonAdapter : BindingListAdapter<Pokemon, PokemonAdapter.PokemonViewHolder>(diffUtil) {
 
-  private var onClickedAt = 0L
+  private var onClickedAt = 1L
 
   override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PokemonViewHolder =
     parent.binding<ItemPokemonBinding>(R.layout.item_pokemon).let(::PokemonViewHolder)
